@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./QuizWebsite 
+    ports:
+      [1234:8080,
+      1234:8081]
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: meig
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: QuizWebsiteDB
+    volumes:
+      - postgres_data:/var/lib/postgresql/data 
+
+volumes:
+  postgres_data:
