@@ -1,0 +1,23 @@
+﻿.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4e0094ff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    min-height: 100vh;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.account-box{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    opacity: .9;
+}
